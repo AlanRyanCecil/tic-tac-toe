@@ -1,0 +1,94 @@
+[ng-cloak] {
+    display: none;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-color: #ECE5D2;
+}
+
+.game-title {
+    font-size: 8vw !important;
+    color: #222;
+    max-height: 12vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#board-display {
+    width: 32vw;
+    height: 32vw;
+    border-radius: .3vw;
+    padding: 0;
+    background-color: transparent;
+    background-color: #ECDBB2;
+    box-shadow: .4vw .6vw 1vw rgba(0, 16, 32, .6);
+    background-size: cover;
+    opacity: 0;
+}
+
+.paper {
+    position: absolute;
+    width: 32vw;
+    height: 32vw;
+    background-image: url('paper.jpg');
+    background-size: cover;
+}
+
+.grid {
+    position: absolute;
+    width: 32vw;
+    height: 32vw;
+    opacity: .85;
+    background-image: url('grid.png');
+    background-size: cover;
+}
+
+.board-cell {
+    padding-bottom: .7vw;
+    opacity: .84;
+    font-size: 11vw;
+}
+
+.cell {
+    padding-bottom: .7vw;
+    font-size: 11vw;
+    color: #000;
+    opacity: 0;
+}
+
+.avitar-selector {
+    font-size: 3vw;
+    color: #222;
+    background-color: #E8E7E1 !important;
+    margin: 1vw;
+    margin-bottom: 0vw;
+    max-width: 1%;
+}
+
+.select-prompt, .player-one {
+    font-size: 2.3vw;
+    margin: 0;
+}
+
+.playing-as {
+    opacity: 0;
+}
+
+.md-dialog-content {
+    background-image: url('paper.jpg');
+}
+
+.md-title {
+    font-size: 8vw;
+    opacity: .93;
+    margin: 0;
+}
+
+md-dialog-actions {
+    display: none !important;
+}
+
+h2 {
+    margin: 0;
+}

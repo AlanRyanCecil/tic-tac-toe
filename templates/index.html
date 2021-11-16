@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>tic-tac-toe</title>
+        <link rel="shortcut icon" href="static/images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+        <link rel="stylesheet" href="static/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    </head>
+    <body>
+
+        <main ng-app="TicTacToeApp" ng-controller="GameCtrl" layout="column" layout-align="center center" ng-cloak>
+            <!-- <h1 class="game-title" layout-margin> {{ game }} </h1> -->
+            <h1 class="game-title" layout-margin>tic-tac-toe</h1>
+            <div class="select-section" layout="column" layout-align="center center">
+                <div layout="row" layout-align="center center">
+                    <md-button class="md-raised avitar-selector" ng-click="avitarSelect('X', 'O');" layout-padding>X</md-button>
+                    <md-button class="md-raised avitar-selector" ng-click="avitarSelect('O', 'X');" layout-padding>O</md-button>
+                </div>
+                <h1 class="select-prompt">select X or O</h1>
+                <h2>(x goes first)</h2>
+            </div>
+            <div id="board-display" layout="column">
+                <div class="paper"></div>
+                <div class="grid"></div>
+                <div class="board-row" layout="row" ng-repeat="row in [1, 2, 3]" flex>
+                    <board-cell ng-repeat="cell in [1, 2, 3]"></board-cell>
+                </div>
+            </div>
+            <h1 class="player-one playing-as">playing as {{ humanDisplay }} </h1>
+            <md-dialog flex="60"></md-dialog>
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js"></script>
+        <script src="https://code.angularjs.org/1.5.2/angular-animate.js"></script>
+        <script src="https://code.angularjs.org/1.5.2/angular-aria.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+        <script src="static/app.js"></script>
+    </body>
+</html>
